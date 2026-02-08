@@ -212,6 +212,7 @@ h1, h2, h3, h4 {
     width: 290px;
     height: 290px;
     border-radius: 50%;
+    object-fit: contain;
 }
 
 .profile-placeholder {
@@ -813,3 +814,4 @@ h1, h2, h3, h4 {
     }
 
 }
+
