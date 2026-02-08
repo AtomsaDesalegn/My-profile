@@ -204,16 +204,18 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: center;
     border: 5px solid #2563eb;
-    border-radius: 50%; /* keep the circular shape */
+    border-radius: 50%; /* circular wrapper */
     background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    overflow: hidden; /* ✅ key: prevents img from overflowing */
 }
 
 .image-wrapper img {
     width: 100%;
     height: 100%;
-    border-radius: 50%; /* make image circular */
-    object-fit: cover;   /* fit inside the circle without distortion */
+    object-fit: cover;
+    display: block; /* removes inline spacing issues */
 }
+
 
 .profile-placeholder {
     text-align: center;
@@ -814,6 +816,7 @@ h1, h2, h3, h4 {
     }
 
 }
+
 
 
 
